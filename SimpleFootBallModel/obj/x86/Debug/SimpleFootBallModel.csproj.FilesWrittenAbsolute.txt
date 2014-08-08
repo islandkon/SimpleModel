@@ -1,0 +1,5 @@
+/Users/Admin/Projects/SimpleFootBallModel/SimpleFootBallModel/obj/x86/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Users/Admin/Projects/SimpleFootBallModel/SimpleFootBallModel/bin/Debug/SimpleFootBallModel.exe.mdb
+/Users/Admin/Projects/SimpleFootBallModel/SimpleFootBallModel/bin/Debug/SimpleFootBallModel.exe
+/Users/Admin/Projects/SimpleFootBallModel/SimpleFootBallModel/obj/x86/Debug/SimpleFootBallModel.exe
+/Users/Admin/Projects/SimpleFootBallModel/SimpleFootBallModel/obj/x86/Debug/SimpleFootBallModel.exe.mdb
