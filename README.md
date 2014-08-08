@@ -1,4 +1,4 @@
-This is my solution for Generating Decimal Odds for:
+Solution to Generate Football Odds for:
  
 1. HAD (Home, Away, Draw)
 2. First Half HAD
@@ -27,23 +27,15 @@ Maher M.J.(1982) Modelling association football scores
 Given that
 Home Team goal expectancy = 1.55
 Away Team goal expectancy = 1.00
+Margin = 0.04
  
 The Generated Odds are :
  
 | Home | Away | Draw | (With Margin)
 | 1.88 | 3.46 | 3.35 |
  
-| Home | Away | Draw | (WithOut Margin)
-| 2.03 | 4.02 | 3.87 |
- 
 | Home | Away | Draw | First Half HAD (With Margin)
 | 2.65 | 4.23 | 1.97 |
  
-| Home | Away | Draw | First Half HAD (WithOut Margin)
-| 2.96 | 5.10 | 2.14 |
- 
 | Line | High | Low  | HiLo (With Margin)
 | 2.5  | 2.06 | 1.68 |
- 
-| Line | High | Low  | HiLo (WithOut Margin)
-| 2.5  | 2.24 | 1.81 |
