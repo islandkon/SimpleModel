@@ -14,8 +14,8 @@ namespace SimpleFootBallModel
 			return String.Format("{0:0.00}",odds);
 		}
 
-		public static void printResult(double[] homeWin, double[] awayWin, double[] draw, double[] hilo, double margin ,double hiloTarget) {
-			Console.WriteLine("Results: ");
+		public static void printResult(String model, double[] homeWin, double[] awayWin, double[] draw, double[] hilo, double margin ,double hiloTarget) {
+			Console.WriteLine(model  + " Results: ");
 			Console.WriteLine();
 
 			Console.WriteLine("| Home | Away | Draw | (With Margin)");

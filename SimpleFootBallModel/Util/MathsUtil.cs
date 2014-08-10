@@ -32,7 +32,7 @@ namespace SimpleFootBallModel
 		/// <param name="expected">target event</param>
 		/// <param name="mean">mean for poission</param>
 		/// <returns>probability for expected value</returns>
-		private static double Poission(int expected, double mean)
+		public static double Poission(int expected, double mean)
 		{
 			return Math.Exp(-1.0*mean)*Math.Pow(mean,expected)/factorial(expected);
 		}

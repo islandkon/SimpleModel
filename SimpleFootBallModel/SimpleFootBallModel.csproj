@@ -35,16 +35,20 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="MathsUtil.cs" />
     <Compile Include="OddsGenerator.cs" />
-    <Compile Include="IFootBallModel.cs" />
-    <Compile Include="ModifiedZiPoission.cs" />
-    <Compile Include="AbstractModel.cs" />
-    <Compile Include="ModelUtil.cs" />
     <Compile Include="Test\NUnitTestClass.cs" />
+    <Compile Include="Model\ModifiedZiPoission.cs" />
+    <Compile Include="Model\DixonColes97.cs" />
+    <Compile Include="Model\DoublePoission.cs" />
+    <Compile Include="Model\IFootBallModel.cs" />
+    <Compile Include="Model\AbstractModel.cs" />
+    <Compile Include="Util\MathsUtil.cs" />
+    <Compile Include="Util\ModelUtil.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Test\" />
+    <Folder Include="Model\" />
+    <Folder Include="Util\" />
   </ItemGroup>
 </Project>

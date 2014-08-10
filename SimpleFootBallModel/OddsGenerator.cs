@@ -8,16 +8,14 @@ namespace SimpleFootBallModel
 	class OddsGenerator
 	{
 		private IFootBallModel model;
+		private double margin;
+		private double hiloTarget;
 
-		/// <summary>
-		/// 4 percent margin
-		/// </summary>
-		private double margin = 0.04;
-		private const double hiloTarget = 2.5;
-
-		public OddsGenerator(IFootBallModel model)
+		public OddsGenerator(IFootBallModel model, double margin, double target)
 		{
 			this.model = model;
+			this.margin = margin;
+			this.hiloTarget = target;
 		}
 
 		/// <summary>
@@ -33,7 +31,7 @@ namespace SimpleFootBallModel
 
 			double[] hilo = model.getHiLoProbabilty(hiloTarget);
 
-			ModelUtil.printResult(homeWin, awayWin, draw, hilo, margin, hiloTarget);
+			ModelUtil.printResult(model.GetType().ToString(), homeWin, awayWin, draw, hilo, margin, hiloTarget);
 		}
 	}
 }

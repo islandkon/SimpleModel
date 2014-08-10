@@ -16,17 +16,39 @@ namespace SimpleFootBallModel
 
 		public const int HALF_AND_FULLTIME = 2;
 
+		protected double homeExpectancy;
+		protected double awayExpectancy;
+
 		protected double[,] homeScoreProbability = new double[2,MATRIX_LENGTH];
 		protected double[,] awayScoreProbability = new double[2,MATRIX_LENGTH];
 
 		protected double[,,] probabilityMatrix = new double[2,MATRIX_LENGTH,MATRIX_LENGTH];
 
 		protected abstract double[,] generateScoreProbability(double expectancy);
-		public abstract void runModel();
-		public abstract double[] getHiLoProbabilty (double target);
-		public abstract double[] getHADProbability (Result result);
 
-		protected double[,,] generateScoreMatrix () 
+		public AbstractModel(double home, double away) {
+			homeExpectancy = home;
+			awayExpectancy = away;
+		}
+
+		public void runModel() {
+			homeScoreProbability = generateScoreProbability(homeExpectancy);
+			awayScoreProbability = generateScoreProbability (awayExpectancy);
+
+			probabilityMatrix = generateScoreMatrix();
+		}
+
+		public double[] getHiLoProbabilty(double target) 
+		{
+			return generateHiLoProbability(target);
+		}
+
+		public double[] getHADProbability(Result result) 
+		{
+			return generateHADProbability(result);
+		}
+
+		protected virtual double[,,] generateScoreMatrix () 
 		{
 			double[,,] probabilityMatrix = new double[HALF_AND_FULLTIME,MATRIX_LENGTH,MATRIX_LENGTH];
 			for (int i = 0; i < HALF_AND_FULLTIME; i++)
