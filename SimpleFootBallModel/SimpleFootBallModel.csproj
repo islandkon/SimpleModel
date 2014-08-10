@@ -30,6 +30,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="nunit.framework" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
@@ -37,6 +38,13 @@
     <Compile Include="MathsUtil.cs" />
     <Compile Include="OddsGenerator.cs" />
     <Compile Include="IFootBallModel.cs" />
+    <Compile Include="ModifiedZiPoission.cs" />
+    <Compile Include="AbstractModel.cs" />
+    <Compile Include="ModelUtil.cs" />
+    <Compile Include="Test\NUnitTestClass.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Test\" />
+  </ItemGroup>
 </Project>

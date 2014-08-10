@@ -12,8 +12,12 @@ namespace SimpleFootBallModel
 		{
 			double HOMETEAM_EXPECTED_GOAL = 1.55;
 			double AWAYTEAM_EXPECTED_GOAL = 1;
+			double lambda = 0.965;
+			double halfTimeWeight = 0.4;
 
-			OddsGenerator generator = new OddsGenerator(HOMETEAM_EXPECTED_GOAL,AWAYTEAM_EXPECTED_GOAL);
+			IFootBallModel testingModel = new ModifiedZiPoission(HOMETEAM_EXPECTED_GOAL, AWAYTEAM_EXPECTED_GOAL, lambda, halfTimeWeight);
+
+			OddsGenerator generator = new OddsGenerator(testingModel);
 			generator.generateOdds();
 
 			Console.WriteLine("Please Any Keys to Exit ...");
