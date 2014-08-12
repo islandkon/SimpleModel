@@ -5,7 +5,7 @@ namespace SimpleFootBallModel
 	class MainClass
 	{
 		/// <summary>
-		/// Main Function for Part 2 of Coding Test
+		/// Main Function
 		/// </summary>
 		/// <param name="args"></param>
 		static void Main(string[] args)

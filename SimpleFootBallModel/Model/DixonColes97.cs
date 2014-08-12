@@ -12,28 +12,7 @@ namespace SimpleFootBallModel
 			this.lambda = lambda;
 			this.halfTimeWeight = weight;
 		}
-
-		private double adjustMent(double x, double y, double home, double away, double p)
-		{
-			if (x == y) {
-				if (x == 0) {
-					return 1.0 - p * home * away;
-				} else if (x == 1) {
-					return 1.0 - p;
-				} else {
-					return 1.0;
-				}
-			} else {
-				if (x == 0 && y == 1) {
-					return 1 + p * home;
-				} else if (x == 1 && y == 0) {
-					return 1.0 + p * away;
-				} else {
-					return 1.0;
-				}
-			}
-		}
-
+			
 		protected override double[,,] generateScoreMatrix () 
 		{
 			double[,,] probabilityMatrix = new double[HALF_AND_FULLTIME,MATRIX_LENGTH,MATRIX_LENGTH];
@@ -62,6 +41,27 @@ namespace SimpleFootBallModel
 				}
 
 			return array;
+		}
+
+		private double adjustMent(double x, double y, double home, double away, double p)
+		{
+			if (x == y) {
+				if (x == 0) {
+					return 1.0 - p * home * away;
+				} else if (x == 1) {
+					return 1.0 - p;
+				} else {
+					return 1.0;
+				}
+			} else {
+				if (x == 0 && y == 1) {
+					return 1 + p * home;
+				} else if (x == 1 && y == 0) {
+					return 1.0 + p * away;
+				} else {
+					return 1.0;
+				}
+			}
 		}
 
 	}

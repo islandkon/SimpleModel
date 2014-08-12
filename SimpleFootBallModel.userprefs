@@ -1,12 +1,29 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SimpleFootBallModel/OddsGenerator.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SimpleFootBallModel/Model/AbstractModel.cs">
     <Files>
-      <File FileName="SimpleFootBallModel/Program.cs" Line="3" Column="3" />
-      <File FileName="SimpleFootBallModel/MathsUtil.cs" Line="16" Column="16" />
-      <File FileName="SimpleFootBallModel/OddsGenerator.cs" Line="16" Column="16" />
-      <File FileName="SimpleFootBallModel/IFootBallModel.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="SimpleFootBallModel/Program.cs" Line="42" Column="42" />
+      <File FileName="SimpleFootBallModel/OddsGenerator.cs" Line="29" Column="29" />
+      <File FileName="SimpleFootBallModel/Model/AbstractModel.cs" Line="34" Column="34" />
+      <File FileName="SimpleFootBallModel/Model/DixonColes97.cs" Line="1" Column="1" />
+      <File FileName="SimpleFootBallModel/Model/DoublePoission.cs" Line="44" Column="44" />
+      <File FileName="SimpleFootBallModel/Model/IFootBallModel.cs" Line="1" Column="1" />
+      <File FileName="SimpleFootBallModel/Model/ModifiedZiPoission.cs" Line="75" Column="75" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="SimpleFootBallModel" expanded="True">
+            <Node name="Model" expanded="True">
+              <Node name="AbstractModel.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
